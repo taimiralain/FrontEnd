@@ -1,0 +1,107 @@
+.container{
+  width: 70%;
+  margin-left: 15%;
+  align-items: center ;
+  align-content: center;
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+  background-color:white;
+  margin-top: 1%;
+}
+
+.alert-danger{
+  width: 70%;
+  margin-left: 15%;
+  border: 2px solid red;
+  text-align: center;
+  background-color: #c2c3c4;
+}
+.textEditor{
+  width: 70%;
+  margin-top: 1%;
+  margin-left: 15%;
+  text-align: center;
+}
+.inputForm{
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid grey;
+}
+
+.input{
+  border-width: 0;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.Name,.Type,.Date{ width: 70%; }
+
+select{ border: 0; }
+select:required:invalid{ color: grey; }
+
+option[value=""][disabled]{ display: none; }
+option{ color: black;}
+
+img{ display: flex; }
+
+.btn{
+  color: #eff3f6;
+  border: 1px solid lightgrey;
+  height: 50%;
+  margin: 2%;
+  background-color:red;
+  justify-content: flex-end;
+  text-align: center;
+  cursor: pointer;
+  padding: 1%;
+}
+.btn[disabled]{
+  background-color: lightgrey;
+  cursor: default ;
+}
+
+.button{
+  justify-content: flex-end;
+  background-color: #eeeeee;
+  }
+@media screen and (max-width : 1200px){
+  .container{
+    width: 100%;
+    margin-left: 0;
+  }
+  .alert-danger{
+    width: 98%;
+    margin-left: 1%;
+  }
+  .inputForm{
+    width: 23%;
+  }
+
+  img{ width: 25%; height: 55px }
+  .input{ width: 75%}
+}
+@media screen and (max-width : 720px){
+  .container{
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputForm{
+    width: 98%;
+    margin: 1%;
+    display: flex;
+  }
+  img{ width: 12%; height: 55px }
+  .input{ width: 75%}
+  input, select{
+    padding-left: 2%;
+    display: flex;
+    flex-grow: 1;
+  }
+  .alert-danger{
+    font-size: x-small;
+  }
+
+}

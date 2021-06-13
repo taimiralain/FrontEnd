@@ -1,0 +1,12 @@
+<div class="contactItem">
+  <div class="contact-tName">
+    <p class="cName">{{contact.name}}</p>
+    <p class="cType">{{contactType[contact.contactType]}}</p>
+  </div>
+  <p class="contact">{{contact.phoneNumber}}</p>
+  <p class="contact birthDate">{{contact.birthDate | date: 'MMM d, y' }}</p>
+  <div class="contact-buttons">
+    <div i18n="Edit Button|Button for get a edit Contact form@@contactEditButton" class="button editBtn" [routerLink]="['/contact-form',contact.contactId]" >Edit</div>
+    <div i18n="Delete Button|Button for delete a Contact@@contactDeleteButton" class="button deleteBtn" (click)="onDeleteContact(contact)">Delete</div>
+  </div>
+</div>

@@ -1,0 +1,3 @@
+<div class="container">
+  <button class="paginate-btn" *ngFor="let page of pagesList" (click)="onPaginateTo(page)" [disabled]="isActivePage(page)">{{page}}</button>
+</div>

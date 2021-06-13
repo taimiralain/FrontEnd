@@ -1,0 +1,125 @@
+.company-banner{
+  width:100%;
+  background-color: #6b6565;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.companyName{
+  color: #eeeeee;
+  font-size: 3rem;
+}
+.nameDescription{
+  margin: 2%;
+  font-size: medium;
+  color: #eeeeee;
+  display:flex;
+  align-content: center;
+  flex-direction: column;
+
+}
+.menuName-banner{
+  visibility:hidden;
+  display:none;
+}
+.application-nav{
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  align-content: space-evenly;
+  flex-direction: row;
+}
+.menuName{
+  width: 19%;
+  color: crimson;
+  font-size: x-large;
+  margin-left: 1%;
+  text-align: center;
+}
+.menuDescription{
+  margin-left:1%;
+  width: 50%;
+  font-size: smaller;
+}
+
+.button-menu-nav{
+  display: flex;
+  justify-content: center;
+}
+.menuBtn{
+  width: 15%;
+  color: white;
+  background-color: #c2c3c4;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  padding: 1%;
+  font-weight: lighter ;
+  margin: 1%;
+}
+
+@media screen and (max-width: 720px){
+  .company-banner{
+    width:100%;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .menuName-banner{
+    visibility: visible;
+    display: flex;
+    color: crimson;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .companyName{
+    color: #eeeeee;
+    font-size: 1.5rem;
+  }
+  .nameDescription, .application-nav{
+    visibility: hidden;
+    display: none;
+  }
+  .button-menu-nav{
+    display: flex;
+    justify-content: center;
+  }
+  .menuBtn{
+    width: 15%;
+    color: white;
+    background-color: #c2c3c4;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 1%;
+    font-weight: lighter ;
+    margin: 1%;
+  }
+}
+@media screen and (max-width: 600px){
+  .menuName-banner, .companyName{ font-size: 1rem; }
+  .companyName{
+    color: #eeeeee;
+    font-size: 1.5rem;
+  }
+  .button-menu-nav{
+    display: flex;
+    justify-content: center;
+  }
+  .menuBtn{
+    width: 23%;
+    color: white;
+    background-color: #c2c3c4;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 1%;
+    font-weight: lighter ;
+    margin: 1%;
+  }
+}
+
+

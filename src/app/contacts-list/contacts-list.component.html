@@ -1,0 +1,25 @@
+<div class="container">
+  <form [formGroup]="form">
+    <select
+        formControlName="sortOrder"
+        id="sortOrder"
+        class="input-sortOrder"
+    >
+      <option [ngValue]="null" [disabled]="true" i18n>Sort By</option>
+      <option *ngFor="let category of SortCategory" [ngValue]="category.value">{{category.label}}</option>
+    </select>
+  </form>
+</div>
+  <div class="container">
+    <div *ngFor="let contact of contactsToPage">
+      <app-contact-item [contact]="contact" (deleteContact)="onDeleteContact($event)"></app-contact-item>
+    </div>
+  <div class="pagination-item">
+    <app-paginator
+      [numberOfItems]="contacts.length"
+      [numberOfItemsPerPage]="numberOfItemsInAPage"
+      [activePage]="currentPage"
+      (paginateTo)="onPaginateTo($event)"
+    ></app-paginator>
+  </div>
+</div>

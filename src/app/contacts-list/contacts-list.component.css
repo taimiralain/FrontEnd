@@ -1,0 +1,24 @@
+.container{
+  width: 70%;
+  margin-top: 2%;
+  margin-left: 15%;
+  padding: 1%;
+  background-color:white;
+}
+.input-sortOrder{
+  display: flex;
+  padding: 1%;
+  margin: 1%;
+  font-size: medium;
+}
+
+@media screen and (max-width: 768px){
+  .container{
+    width: 98%;
+    margin-left: 0;
+    padding: 1%;
+  }
+  .input-sortOrder{
+    font-size: x-small;
+  }
+}

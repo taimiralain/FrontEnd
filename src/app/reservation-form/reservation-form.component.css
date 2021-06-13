@@ -1,0 +1,115 @@
+.container{
+  width: 70%;
+  margin-left: 15%;
+  align-items: center ;
+  align-content: center;
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+  background-color:white;
+  margin-top: 1%;
+}
+
+.alert-danger{
+  width: 70%;
+  margin-left: 15%;
+  border: 2px solid red;
+  text-align: center;
+  background-color: #c2c3c4;
+}
+
+.textEditor{
+  width: 70%;
+  margin-top: 1%;
+  margin-left: 15%;
+  text-align: center;
+  display: inline-block;
+}
+
+.inputForm{
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid grey;
+}
+
+.input{
+  border-width: 0;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.Name,.Date{ width: 70%; }
+
+img{ display: flex; }
+
+.btn{
+  color: #eff3f6;
+  border: 1px solid lightgrey;
+  height: 50%;
+  margin: 2%;
+  background-color:red;
+  justify-content: flex-end;
+  text-align: center;
+  cursor: pointer;
+  padding: 1%;
+}
+.btn[disabled]{
+  background-color: lightgrey;
+  cursor: default ;
+}
+
+.button{
+  justify-content: flex-end;
+  background-color: #eeeeee;
+}
+@media screen and (max-width : 1200px){
+  .container{
+    width: 80%;
+    margin-left: 10%;
+  }
+  .alert-danger{
+    width: 98%;
+    margin-left: 1%;
+  }
+  .textEditor{
+    width: 80%;
+    margin-top: 1%;
+    margin-left: 10%;
+  }
+  .inputForm{
+    width: 31%;
+  }
+  img{ width: 25%; height: 55px }
+  .input{ width: 75%}
+}
+
+@media screen and (max-width : 720px){
+  .container{
+    width: 100%;
+    margin-left: 0;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputForm{
+    width: 98%;
+    margin: 1%;
+    display: flex;
+  }
+  img{ width: 12%; height: 55px }
+  .input{ width: 75%}
+  input{
+    padding-left: 2%;
+    display: flex;
+    flex-grow: 1;
+  }
+  .alert-danger{
+    font-size: x-small;
+  }
+  .textEditor{
+    width: 98%;
+    margin-top: 1%;
+    margin-left: 1%;
+  }
+}
