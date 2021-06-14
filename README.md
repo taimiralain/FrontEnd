@@ -74,6 +74,7 @@ Filters Reservations and Contacts.
 Add Contacts and Reservations.
 
 **Recommended tools**
+---
 1. [`Visual Studio Code`](https://code.visualstudio.com/).
 2. [`git`](https://git-scm.com/).
 
