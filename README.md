@@ -26,7 +26,7 @@
 -[Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
 -[Node](https://nodejs.org/es/) >=12.8
 -[npm] (https://www.npmjs.com/)>= 6.14.4
--
+
 
 
 ```
